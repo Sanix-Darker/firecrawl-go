@@ -811,3 +811,10 @@ func (app *FirecrawlApp) handleError(statusCode int, body []byte, action string)
 
 	return fmt.Errorf(message)
 }
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
